@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>**Darshan Thaker** | Darshan Thaker</title>
+    <link>https://darshanthaker.github.io/authors/darshan-thaker/</link>
+      <atom:link href="https://darshanthaker.github.io/authors/darshan-thaker/index.xml" rel="self" type="application/rss+xml" />
+    <description>**Darshan Thaker**</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://darshanthaker.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>**Darshan Thaker**</title>
+      <link>https://darshanthaker.github.io/authors/darshan-thaker/</link>
+    </image>
+    
+    <item>
+      <title>Accurate Protein Structure Prediction by Embeddings and Deep Learning Representations</title>
+      <link>https://darshanthaker.github.io/publication/drori-2019-accurate/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://darshanthaker.github.io/publication/drori-2019-accurate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Combinatorial Optimization by Graph Pointer Networks and Hierarchical Reinforcement Learning</title>
+      <link>https://darshanthaker.github.io/publication/ma-2019-combinatorial/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://darshanthaker.github.io/publication/ma-2019-combinatorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding the Convergence of Adversarial Training for Overparameterized Neural Networks</title>
+      <link>https://darshanthaker.github.io/publication/thaker-2019-msthesis/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://darshanthaker.github.io/publication/thaker-2019-msthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generating Synthetic Question-Answer Pairs for Transfer Learning in Biomedical Question Answering</title>
+      <link>https://darshanthaker.github.io/publication/thaker-2018-ugthesis/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://darshanthaker.github.io/publication/thaker-2018-ugthesis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
