@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90 Day Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-2xl mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-8">90 Day Challenge</h1>
+        
+        <!-- Aakash's Card -->
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">Aakash</h2>
+            
+            <!-- Workouts -->
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span>Workouts: <span id="aakash-workouts">0</span>/50</span>
+                    <div>
+                        <button onclick="updateCount('aakash', 'workouts', -1)" class="px-3 py-1 bg-blue-500 text-white rounded">-</button>
+                        <button onclick="updateCount('aakash', 'workouts', 1)" class="px-3 py-1 bg-blue-500 text-white rounded">+</button>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-full h-4">
+                    <div id="aakash-workouts-bar" class="bg-blue-500 rounded-full h-4" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span>Desserts: <span id="aakash-desserts">0</span>/10</span>
+                    <div>
+                        <button onclick="updateCount('aakash', 'desserts', -1)" class="px-3 py-1 bg-amber-500 text-white rounded">-</button>
+                        <button onclick="updateCount('aakash', 'desserts', 1)" class="px-3 py-1 bg-amber-500 text-white rounded">+</button>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-full h-4">
+                    <div id="aakash-desserts-bar" class="bg-amber-500 rounded-full h-4" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <!-- Steps -->
+            <div>
+                <div class="flex justify-between mb-2">
+                    <span>Steps Days: <span id="aakash-steps">0</span>/90</span>
+                    <button onclick="updateCount('aakash', 'steps', 1)" class="px-3 py-1 bg-green-500 text-white rounded">✓</button>
+                </div>
+                <div class="bg-gray-200 rounded-full h-4">
+                    <div id="aakash-steps-bar" class="bg-green-500 rounded-full h-4" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Darshan's Card -->
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">Darshan</h2>
+            
+            <!-- Workouts -->
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span>Workouts: <span id="darshan-workouts">0</span>/50</span>
+                    <div>
+                        <button onclick="updateCount('darshan', 'workouts', -1)" class="px-3 py-1 bg-blue-500 text-white rounded">-</button>
+                        <button onclick="updateCount('darshan', 'workouts', 1)" class="px-3 py-1 bg-blue-500 text-white rounded">+</button>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-full h-4">
+                    <div id="darshan-workouts-bar" class="bg-blue-500 rounded-full h-4" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <span>Desserts: <span id="darshan-desserts">0</span>/10</span>
+                    <div>
+                        <button onclick="updateCount('darshan', 'desserts', -1)" class="px-3 py-1 bg-amber-500 text-white rounded">-</button>
+                        <button onclick="updateCount('darshan', 'desserts', 1)" class="px-3 py-1 bg-amber-500 text-white rounded">+</button>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-full h-4">
+                    <div id="darshan-desserts-bar" class="bg-amber-500 rounded-full h-4" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <!-- Steps -->
+            <div>
+                <div class="flex justify-between mb-2">
+                    <span>Steps Days: <span id="darshan-steps">0</span>/90</span>
+                    <button onclick="updateCount('darshan', 'steps', 1)" class="px-3 py-1 bg-green-500 text-white rounded">✓</button>
+                </div>
+                <div class="bg-gray-200 rounded-full h-4">
+                    <div id="darshan-steps-bar" class="bg-green-500 rounded-full h-4" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar View -->
+<div class="bg-white rounded-lg shadow p-6 mt-8">
+    <h2 class="text-xl font-bold mb-4">Activity Calendar</h2>
+    <div class="grid grid-cols-7 gap-1" id="calendar-grid">
+        <!-- Calendar days will be inserted here by JavaScript -->
+    </div>
+    
+    <!-- Legend -->
+    <div class="mt-6 flex flex-wrap gap-4">
+        <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+            <span class="text-sm text-gray-600">Aakash Workout</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+            <span class="text-sm text-gray-600">Darshan Workout</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+            <span class="text-sm text-gray-600">Aakash Dessert</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-amber-300"></div>
+            <span class="text-sm text-gray-600">Darshan Dessert</span>
+        </div>
+    </div>
+</div>
+
+        <div class="text-center text-gray-600">
+            Feb 18, 2025 - May 17, 2025
+        </div>
+    </div>
+
+    <script>
+        // Initialize state
+        let state = JSON.parse(localStorage.getItem('fitness-challenge')) || {
+            aakash: { workouts: 0, desserts: 0, steps: 0 },
+            darshan: { workouts: 0, desserts: 0, steps: 0 }
+        };
+
+        // Update UI based on state
+        function updateUI() {
+            ['aakash', 'darshan'].forEach(person => {
+                ['workouts', 'desserts', 'steps'].forEach(metric => {
+                    const max = metric === 'workouts' ? 50 : metric === 'desserts' ? 10 : 90;
+                    const value = state[person][metric];
+                    const percentage = Math.min(100, (value / max) * 100);
+                    
+                    document.getElementById(`${person}-${metric}`).textContent = value;
+                    document.getElementById(`${person}-${metric}-bar`).style.width = `${percentage}%`;
+                });
+            });
+
+            // Save to localStorage
+            localStorage.setItem('fitness-challenge', JSON.stringify(state));
+        }
+
+        // Update count function
+        function updateCount(person, metric, change) {
+            const max = metric === 'workouts' ? 50 : metric === 'desserts' ? 10 : 90;
+            const current = state[person][metric];
+            
+            if (change > 0 && current < max) {
+                state[person][metric]++;
+            } else if (change < 0 && current > 0) {
+                state[person][metric]--;
+            }
+            
+            updateUI();
+        }
+
+        // Calendar functions
+function generateCalendar() {
+    const startDate = new Date('2025-02-18');
+    const endDate = new Date('2025-05-17');
+    const calendarGrid = document.getElementById('calendar-grid');
+    
+    // Add weekday headers
+    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    weekdays.forEach(day => {
+        const dayHeader = document.createElement('div');
+        dayHeader.className = 'text-center text-sm font-medium text-gray-600 p-2';
+        dayHeader.textContent = day;
+        calendarGrid.appendChild(dayHeader);
+    });
+    
+    // Generate calendar days
+    let currentDate = new Date(startDate);
+    while (currentDate <= endDate) {
+        const dayDiv = document.createElement('div');
+        dayDiv.className = 'border rounded p-2 h-16 text-xs';
+        
+        // Date number
+        const dateNumber = document.createElement('div');
+        dateNumber.className = 'text-gray-600 mb-2';
+        dateNumber.textContent = currentDate.getDate();
+        dayDiv.appendChild(dateNumber);
+        
+        // Activity indicators
+        const activities = document.createElement('div');
+        activities.className = 'flex flex-col gap-1';
+        
+        // Add dots based on state
+        const dateStr = currentDate.toISOString().split('T')[0];
+        if (state[dateStr]) {
+            if (state[dateStr].aakashWorkout || state[dateStr].darshanWorkout) {
+                const workoutDots = document.createElement('div');
+                workoutDots.className = 'flex gap-1';
+                if (state[dateStr].aakashWorkout) {
+                    workoutDots.innerHTML += '<div class="w-2 h-2 rounded-full bg-blue-500"></div>';
+                }
+                if (state[dateStr].darshanWorkout) {
+                    workoutDots.innerHTML += '<div class="w-2 h-2 rounded-full bg-blue-300"></div>';
+                }
+                activities.appendChild(workoutDots);
+            }
+            
+            if (state[dateStr].aakashDessert || state[dateStr].darshanDessert) {
+                const dessertDots = document.createElement('div');
+                dessertDots.className = 'flex gap-1';
+                if (state[dateStr].aakashDessert) {
+                    dessertDots.innerHTML += '<div class="w-2 h-2 rounded-full bg-amber-500"></div>';
+                }
+                if (state[dateStr].darshanDessert) {
+                    dessertDots.innerHTML += '<div class="w-2 h-2 rounded-full bg-amber-300"></div>';
+                }
+                activities.appendChild(dessertDots);
+            }
+        }
+        
+        dayDiv.appendChild(activities);
+        calendarGrid.appendChild(dayDiv);
+        
+        currentDate.setDate(currentDate.getDate() + 1);
+    }
+}
+
+// Modify state structure to include date tracking
+state.dates = state.dates || {};
+
+// Modify updateCount function to track dates
+const oldUpdateCount = updateCount;
+updateCount = function(person, metric, change) {
+    oldUpdateCount(person, metric, change);
+    
+    // Track the date of the activity
+    const today = new Date().toISOString().split('T')[0];
+    state.dates[today] = state.dates[today] || {};
+    if (metric === 'workouts' && change > 0) {
+        state.dates[today][person + 'Workout'] = true;
+    } else if (metric === 'desserts' && change > 0) {
+        state.dates[today][person + 'Dessert'] = true;
+    }
+    
+    // Regenerate calendar
+    document.getElementById('calendar-grid').innerHTML = '';
+    generateCalendar();
+}
+
+// Initialize calendar
+generateCalendar();
+
+        // Initial UI update
+        updateUI();
+    </script>
+</body>
+</html>
