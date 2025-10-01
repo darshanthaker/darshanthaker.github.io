@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Buyun Liang | Darshan Thaker</title>
-    <link>https://darshanthaker.github.io/authors/buyun-liang/</link>
-      <atom:link href="https://darshanthaker.github.io/authors/buyun-liang/index.xml" rel="self" type="application/rss+xml" />
-    <description>Buyun Liang</description>
+    <title>Liangzu Peng | Darshan Thaker</title>
+    <link>https://darshanthaker.github.io/authors/liangzu-peng/</link>
+      <atom:link href="https://darshanthaker.github.io/authors/liangzu-peng/index.xml" rel="self" type="application/rss+xml" />
+    <description>Liangzu Peng</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://darshanthaker.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Buyun Liang</title>
-      <link>https://darshanthaker.github.io/authors/buyun-liang/</link>
+      <title>Liangzu Peng</title>
+      <link>https://darshanthaker.github.io/authors/liangzu-peng/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://darshanthaker.github.io/publication/liang-2025-seca/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://darshanthaker.github.io/publication/liang-2025-seca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>KDA: A Knowledge-Distilled Attacker for Generating Diverse Prompts to Jailbreak LLMs</title>
-      <link>https://darshanthaker.github.io/publication/liang-2025-kda/</link>
-      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://darshanthaker.github.io/publication/liang-2025-kda/</guid>
       <description></description>
     </item>
     
