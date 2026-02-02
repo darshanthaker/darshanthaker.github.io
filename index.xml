@@ -5,12 +5,20 @@
     <link>https://darshanthaker.github.io/</link>
       <atom:link href="https://darshanthaker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Darshan Thaker</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://darshanthaker.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Darshan Thaker</title>
       <link>https://darshanthaker.github.io/</link>
     </image>
+    
+    <item>
+      <title>Scale-Cascaded Diffusion Models for Super-Resolution in Medical Imaging</title>
+      <link>https://darshanthaker.github.io/publication/thaker-2026-scale/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://darshanthaker.github.io/publication/thaker-2026-scale/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SECA: Semantically Equivalent &amp; Coherent Attacks for Eliciting LLM Hallucinations</title>
