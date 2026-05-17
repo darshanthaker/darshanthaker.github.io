@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Liangzu Peng | Darshan Thaker</title>
-    <link>https://darshanthaker.github.io/authors/liangzu-peng/</link>
-      <atom:link href="https://darshanthaker.github.io/authors/liangzu-peng/index.xml" rel="self" type="application/rss+xml" />
-    <description>Liangzu Peng</description>
+    <title>Fengrui Tian | Darshan Thaker</title>
+    <link>https://darshanthaker.github.io/authors/fengrui-tian/</link>
+      <atom:link href="https://darshanthaker.github.io/authors/fengrui-tian/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fengrui Tian</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://darshanthaker.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Liangzu Peng</title>
-      <link>https://darshanthaker.github.io/authors/liangzu-peng/</link>
+      <title>Fengrui Tian</title>
+      <link>https://darshanthaker.github.io/authors/fengrui-tian/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://darshanthaker.github.io/publication/liang-2026-realista/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
       <guid>https://darshanthaker.github.io/publication/liang-2026-realista/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SECA: Semantically Equivalent &amp; Coherent Attacks for Eliciting LLM Hallucinations</title>
-      <link>https://darshanthaker.github.io/publication/liang-2025-seca/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://darshanthaker.github.io/publication/liang-2025-seca/</guid>
       <description></description>
     </item>
     
